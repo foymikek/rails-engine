@@ -3,7 +3,7 @@ class Api::V1::Merchants::ItemsController < ApplicationController
     begin
       render json: ItemSerializer.new(Merchant.find(params[:merchant_id]).items)
     rescue
-      render json: {"error" => {}}, status:404
+      render json: {"error" => {}}, status: 404
     end
   end
 end

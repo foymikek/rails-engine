@@ -1,6 +1,7 @@
   class Api::V1::Items::SearchController < ApplicationController
     def find_all_by
       items = Item.where('LOWER(name) LIKE ?', "%#{params[:name].downcase}%")
+
       if params[:name].empty?
         render json: {"data" => []}, status: 200
       else
