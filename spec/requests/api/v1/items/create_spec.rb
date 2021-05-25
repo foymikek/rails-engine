@@ -3,7 +3,8 @@ require 'rails_helper'
 describe "Create CRUD Endpoint" do
   describe 'POST /items' do
     it "it can create an item" do
-      merchant = create(:merchant)
+      merchant    = create(:merchant)
+      
       item_params = {
         name: 'Teddy McGhee',
         description: 'Teddy likes honey pots.',

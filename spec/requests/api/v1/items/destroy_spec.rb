@@ -15,7 +15,7 @@ describe "Destroy Item CRUD Endpoint" do
       
       expect(response).to have_http_status(:no_content)
 
-      expect{Item.find(item)}.to raise_error(ActiveRecord::RecordNotFound)
+      expect{ Item.find(item) }.to raise_error(ActiveRecord::RecordNotFound)
     end
   end
 end
