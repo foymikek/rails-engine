@@ -83,10 +83,10 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -137,6 +137,20 @@
           null
         ]
       },
+      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/merchants/items_controller.rb": {
         "lines": [
           1,
@@ -151,6 +165,6 @@
         ]
       }
     },
-    "timestamp": 1621965592
+    "timestamp": 1621966625
   }
 }

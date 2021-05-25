@@ -10,8 +10,11 @@ describe "Destroy Item CRUD Endpoint" do
       expect{ delete "/api/v1/items/#{item}" }.to change(Item, :count).by(-1)
 
       expect(response).to be_successful
+
       expect(Item.count).to eq(0)
+      
       expect(response).to have_http_status(:no_content)
+
       expect{Item.find(item)}.to raise_error(ActiveRecord::RecordNotFound)
     end
   end
