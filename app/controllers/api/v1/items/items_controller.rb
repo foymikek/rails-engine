@@ -27,6 +27,11 @@ class Api::V1::Items::ItemsController < ApplicationController
     end
   end
 
+  def destroy
+    Item.find(params[:id]).destroy
+    head :no_content
+  end
+
   private
 
   def item_params
