@@ -1,4 +1,6 @@
 class Api::V1::Items::ItemsController < ApplicationController
+  
+#refactor; max 20 per_page, add constant definig max value
   def index
     per_page = (params[:per_page] || 20).to_i 
     page     = (params[:page] || 1).to_i 

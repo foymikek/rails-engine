@@ -18,6 +18,7 @@ describe "Create CRUD Endpoint" do
 
       expect(response).to be_successful
       expect(response).to have_http_status(:created)
+      
       expect(created_item.name).to eq(item_params[:name])
       expect(created_item.description).to eq(item_params[:description])
       expect(created_item.unit_price).to eq(item_params[:unit_price])
