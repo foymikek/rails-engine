@@ -2,12 +2,12 @@ require 'rails_helper'
 
 describe "Index CRUD endpoint" do
   describe 'GET /items' do
-    it "it can return all books" do
-      merchant1 = create(:merchant).id
+    it "it can return all items" do
+      merchant_1 = create(:merchant).id
       item1     = create(:item, merchant_id: merchant1)
       item2     = create(:item, merchant_id: merchant1)
       item3     = create(:item, merchant_id: merchant1)
-      merchant2 = create(:merchant).id
+      merchant_2 = create(:merchant).id
       item1     = create(:item, merchant_id: merchant2)
       item2     = create(:item, merchant_id: merchant2)
       item3     = create(:item, merchant_id: merchant2)

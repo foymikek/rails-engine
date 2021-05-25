@@ -3,8 +3,8 @@ require 'rails_helper'
 describe "Show CRUD Endpoint" do
   describe "GET items/:id" do
     it "it can return one item" do
-      merchant1 = create(:merchant).id
-      item1     = create(:item, merchant_id: merchant1).id
+      merchant_1 = create(:merchant).id
+      item1     = create(:item, merchant_id: merchant_1).id
 
       get "/api/v1/items/#{item1}"
 
