@@ -1,26 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/item.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/merchant.rb": {
         "lines": [
           1,
@@ -34,18 +14,22 @@
           null
         ]
       },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": {
+      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/merchants/merchants_controller.rb": {
         "lines": [
           1,
           1,
           1,
-          0,
+          1,
+          1,
           null,
-          0,
-          0,
-          null,
-          0,
-          null,
+          1,
           null,
           null
         ]
@@ -55,8 +39,16 @@
           1,
           null
         ]
+      },
+      "/Users/mikefoy/turing/3module/projects/rails-engine/app/serialiers/merchant_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1621973284
+    "timestamp": 1622067044
   }
 }

@@ -8,7 +8,7 @@ describe 'Search Items Endpoint' do
      create(:item, name: 'Stone-age pebble')
      create(:item, name: 'Island pebble')
 
-     get '/api/v1/items/find_all_by?name=stoN'
+     get '/api/v1/items/find_all?name=stoN'
      
      items = JSON.parse(response.body, symbolize_names: true)[:data]
      
