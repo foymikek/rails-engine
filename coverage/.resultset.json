@@ -1,56 +1,39 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/customer.rb": {
+      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/merchants/merchants_controller.rb": {
         "lines": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
           1,
           1,
           null,
           1,
           1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/application_record.rb": {
+      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/application_controller.rb": {
         "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/invoice_item.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/invoice.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/item.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
           1,
           null
         ]
@@ -68,108 +51,10 @@
           null
         ]
       },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/transaction.rb": {
+      "/Users/mikefoy/turing/3module/projects/rails-engine/app/models/application_record.rb": {
         "lines": [
           1,
           1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/items/items_controller.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/serialiers/item_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          0,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/merchants/merchants_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
           null
         ]
       },
@@ -180,21 +65,8 @@
           1,
           null
         ]
-      },
-      "/Users/mikefoy/turing/3module/projects/rails-engine/app/controllers/api/v1/merchants/items_controller.rb": {
-        "lines": [
-          1,
-          2,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1622068104
+    "timestamp": 1622072529
   }
 }
