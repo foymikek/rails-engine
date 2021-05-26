@@ -7,12 +7,14 @@ describe "Index CRUD endpoint" do
         create(:merchant)
       end
 
-      get '/api/v1/merchants/2'
+      merchant = Merchant.last
+
+      get "/api/v1/merchants/#{merchant.id}"
 
       expect(response).to be_successful
     
       merchant = JSON.parse(response.body, symbolize_names: true)[:data]
-      
+
       expect(merchant[:attributes].count).to eq(1)
 
       expect(merchant[:attributes]).to have_key(:name)
