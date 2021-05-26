@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 describe "Index CRUD endpoint" do
-  describe 'GET /items' do
-    it "it can return all items" do
+  describe 'GET /merchants' do
+    it "it can return all merchants" do
       8.times do
         create(:merchant)
       end

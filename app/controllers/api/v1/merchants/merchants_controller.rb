@@ -6,4 +6,8 @@
 
       render json: MerchantSerializer.new(merchants)
     end
+
+    def show
+      render json: MerchantSerializer.new(Merchant.find(params[:id]))
+    end
   end
