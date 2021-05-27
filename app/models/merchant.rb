@@ -27,7 +27,7 @@ class Merchant < ApplicationRecord
       .limit(quantity)
     end
 
-    def potential_revenue(quantity)
+    def unshipped(quantity)
       joins(:invoices)
       .select('merchants.*, sum(invoice_items.unit_price * invoice_items.quantity) as potential_revenue')
       .group(:id)
