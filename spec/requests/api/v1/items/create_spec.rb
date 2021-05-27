@@ -6,8 +6,8 @@ describe "Create CRUD Endpoint" do
       merchant    = create(:merchant)
       
       item_params = {
-        name: 'Teddy McGhee',
-        description: 'Teddy likes honey pots.',
+        name: 'Louie Merlin',
+        description: 'Louie likes trixies.',
         unit_price: 24.99,
         merchant_id: merchant.id
       }
