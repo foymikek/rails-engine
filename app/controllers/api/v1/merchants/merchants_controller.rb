@@ -1,8 +1,11 @@
   class Api::V1::Merchants::MerchantsController < ApplicationController
+    MAX_RESULTS_PER_PAGE = 20
+
     def index
-      per_page     = (params[:per_page] || 20).to_i 
-      page         = (params[:page] || 1).to_i 
-      merchants    = Merchant.limit(per_page).offset(((page - 1) * per_page))
+      page_count     = (params[:page] || 1 ).to_i
+      per_page_count = (params[:per_page] || 20 ).to_i
+
+      merchants = Merchant.limit(result_limit).offset((page_count - 1) * per_page_count)
 
       render json: MerchantSerializer.new(merchants)
     end
@@ -19,7 +22,14 @@
       end
     end
 
-      private
+    private
+
+    def result_limit
+      [
+        params.fetch(:per_page, MAX_RESULTS_PER_PAGE).to_i,
+        MAX_RESULTS_PER_PAGE
+      ].max
+    end   
 
     def merchant_params
       params.require(:merchant).permit(:name)

@@ -1,10 +1,11 @@
 class Api::V1::Items::ItemsController < ApplicationController
-  
-#refactor; max 20 per_page (private), add constant definig max value
+  MAX_RESULTS_PER_PAGE = 20
+
   def index
-    per_page = (params[:per_page] || 20).to_i 
-    page     = (params[:page] || 1).to_i 
-    items    = Item.limit(per_page).offset(((page - 1) * per_page))
+    page_count     = (params[:page] || 1 ).to_i
+    per_page_count = (params[:per_page] || 20 ).to_i
+
+    items = Item.limit(result_limit).offset((page_count - 1) * per_page_count)
 
     render json: ItemSerializer.new(items)
   end
@@ -40,6 +41,13 @@ class Api::V1::Items::ItemsController < ApplicationController
 
   private
 
+  def result_limit
+    [
+      params.fetch(:per_page, MAX_RESULTS_PER_PAGE).to_i,
+      MAX_RESULTS_PER_PAGE
+    ].max
+  end 
+  
   def item_params
     params.require(:item).permit(:name, :description, :unit_price, :merchant_id)
   end
