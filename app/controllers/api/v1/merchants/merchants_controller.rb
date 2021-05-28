@@ -28,7 +28,7 @@
       [
         params.fetch(:per_page, MAX_RESULTS_PER_PAGE).to_i,
         MAX_RESULTS_PER_PAGE
-      ].max
+      ].min
     end   
 
     def merchant_params
