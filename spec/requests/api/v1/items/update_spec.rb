@@ -3,9 +3,9 @@ require 'rails_helper'
 describe "Items API CRUD Endpoints" do
   describe 'PATCH /items/:id' do
     it "can update a item" do
-      id = create(:item).id
+      id            = create(:item).id
       previous_name = Item.last.name
-      item_params = { name: 'Louie Merlin' }
+      item_params   = { name: 'Louie Merlin' }
       headers = {"CONTENT_TYPE" => "application/json"}
 
       patch "/api/v1/items/#{id}", headers: headers, params: JSON.generate(item: item_params)

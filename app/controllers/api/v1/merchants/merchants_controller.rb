@@ -12,7 +12,7 @@
     end
     
     def create
-      merchant = Merchant.new(merchant_params)
+      merchant     = Merchant.new(merchant_params)
 
       if merchant.save
         render json: MerchantSerializer.new(merchant), status: :created
