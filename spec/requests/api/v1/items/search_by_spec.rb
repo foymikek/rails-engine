@@ -36,4 +36,18 @@ describe 'Search Items Endpoint' do
        expect(item[:attributes][:merchant_id]).to be_a(Numeric)
      end 
    end
+
+  describe 'Merchant Find Sad Path' do
+    it 'it will return a 204 if there are no name matches' do
+     create(:item, name: "Green Stone")
+     create(:item, name: 'Jade Stone')
+     create(:item, name: 'Stone-age pebble')
+     create(:item, name: 'Island pebble')
+
+      get '/api/v1/items/find_all?name=xyz'
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+    end
+  end
 end
